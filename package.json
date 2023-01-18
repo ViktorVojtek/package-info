@@ -1,0 +1,14 @@
+{
+  "name": "package-info",
+  "version": "1.0.0",
+  "description": "The react hook for getting the simple information about package you are curious of.",
+  "main": "index.js",
+  "repository": "https://github.com/ViktorVojtek/package-info.git",
+  "author": "ViktorVojtek",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "bundle": "rm -rf ./dist && tsc --declaration && cp package.json dist/ && cp README.md dist/",
+    "publish": "npm publish dist"
+  }
+}
