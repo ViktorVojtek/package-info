@@ -1,14 +1,33 @@
 {
-  "name": "package-info",
-  "version": "1.0.0",
+  "name": "@viktorvojtek/package-info",
+  "version": "1.0.1",
   "description": "The react hook for getting the simple information about package you are curious of.",
   "main": "index.js",
-  "repository": "https://github.com/ViktorVojtek/package-info.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViktorVojtek/package-info.git"
+  },
   "author": "ViktorVojtek",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "bundle": "rm -rf ./dist && tsc --declaration && cp package.json dist/ && cp README.md dist/",
-    "publish": "npm publish dist"
-  }
+    "publish": "npm publish ./dist --access=public"
+  },
+  "bugs": {
+    "url": "https://github.com/ViktorVojtek/package-info/issues"
+  },
+  "homepage": "https://github.com/ViktorVojtek/package-info#readme",
+  "keywords": [
+    "react",
+    "hook",
+    "hooks",
+    "package.json",
+    "info",
+    "version"
+  ]
 }
